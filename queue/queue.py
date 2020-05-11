@@ -17,6 +17,7 @@ Stretch: What if you could only use instances of your Stack class to implement t
 #3.  In array you can access any index. Linked list you can only access one adjacent to itself. 
 # Also info stored consecutively in array, Linked list - stored randomly.
 
+
 import sys
 sys.path.append("../doubly_linked_list")
 from doubly_linked_list import DoublyLinkedList
