@@ -10,16 +10,32 @@ return elements in Last In First Out order.
 3. What is the difference between using an array vs. a linked list when 
    implementing a Stack?
 """
+import sys
+sys.path.append("../doubly_linked_list")
+from doubly_linked_list import DoublyLinkedList
+
 class Stack:
     def __init__(self):
         self.size = 0
         # self.storage = ?
+        self.storage = DoublyLinkedList()
 
     def __len__(self):
         pass
 
     def push(self, value):
-        pass
+        # add 1 to length of array
+        self.size += 1 
+        #return length of array, add to end.
+        return self.storage.add_to_tail(value)
 
     def pop(self):
-        pass
+          # if length of array is greater than 0
+        if self.size > 0:
+            #subtract 1
+            self.size -= 1
+        #return length of array, remove from front.
+            return self.storage.remove_from_head()
+        else:
+        # do nothing
+            return None

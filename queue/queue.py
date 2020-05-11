@@ -14,10 +14,11 @@ return elements in First In First Out order.
 Stretch: What if you could only use instances of your Stack class to implement the Queue?
          What would that look like? How many Stacks would you need? Try it!
 """
-#3.  In array you can access any index. Linked list you can only access one adjacent to itself.
+#3.  In array you can access any index. Linked list you can only access one adjacent to itself. 
+# Also info stored consecutively in array, Linked list - stored randomly.
 
 import sys
-sys.path.append('../doubly_linked_list')
+sys.path.append("../doubly_linked_list")
 from doubly_linked_list import DoublyLinkedList
 
 
@@ -25,7 +26,6 @@ class Queue:
     def __init__(self):
         self.size = 0
         # self.storage = ?
-
         self.storage =  DoublyLinkedList()
     
     def __len__(self):
@@ -34,9 +34,9 @@ class Queue:
 
     def enqueue(self, value):
         # add 1 to length of array
-        self.size += 1
+        self.size += 1 
         #return length of array, add to end.
-        return self.storage.add_to_tail()
+        return self.storage.add_to_tail(value)
 
     def dequeue(self):
         # if length of array is greater than 0
