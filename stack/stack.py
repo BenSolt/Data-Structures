@@ -21,7 +21,7 @@ class Stack:
         self.storage = DoublyLinkedList()
 
     def __len__(self):
-        pass
+        return self.size
 
     def push(self, value):
         # add 1 to length of array
@@ -35,7 +35,7 @@ class Stack:
             #subtract 1
             self.size -= 1
         #return length of array, remove from front.
-            return self.storage.remove_from_head()
+            return self.storage.remove_from_tail()
         else:
         # do nothing
             return None
