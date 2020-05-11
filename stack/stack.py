@@ -19,18 +19,21 @@ class Stack:
         self.size = 0
         # self.storage = ?
         self.storage = DoublyLinkedList()
+        
 
     def __len__(self):
         return self.size
 
     def push(self, value):
+        
         # add 1 to length of array
         self.size += 1 
         #return length of array, add to end.
         return self.storage.add_to_tail(value)
 
     def pop(self):
-          # if length of array is greater than 0
+        
+        # if length of array is greater than 0
         if self.size > 0:
             #subtract 1
             self.size -= 1
@@ -39,3 +42,5 @@ class Stack:
         else:
         # do nothing
             return None
+
+            
