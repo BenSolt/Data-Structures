@@ -17,6 +17,8 @@ class Queue:
     def __init__(self):
         self.size = 0
         # self.storage = ?
+
+        self.storage = 
     
     def __len__(self):
         pass
