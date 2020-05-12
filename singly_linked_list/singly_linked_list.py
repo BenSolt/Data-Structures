@@ -36,12 +36,16 @@ if __name__=='__main__':
     llist.printList() 
     
     while True:
+
         cmd = input("Enter a number:").split(' ')
 
         if cmd[0] == "a":
-            print("list 1")
+            print(llist.head)
         elif cmd[0] == 'b':     
-            print("list 2")
-        
+           print(second)
+        elif cmd[0] == 'c':     
+            print(third)    
+        elif cmd[0] == 'd':     
+            print(fourth)
    
     
