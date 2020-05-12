@@ -12,10 +12,10 @@ class LinkedList:
         self.head = None
 
     def printList(self): 
-        temp = self.head 
-        while (temp): 
-            print(temp.data)
-            temp = temp.next
+        head = self.head 
+        while (head): 
+            print(head.data)
+            head = head.next
 
 
   
